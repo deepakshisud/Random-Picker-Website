@@ -32,9 +32,13 @@ app.get('/', async (req, res) => {
 
 app.put('/selected', async(req,res) => {
     const t = req.body.topic;
-    console.log(t);
     const to = await Topic.findOne(t);
-    res.render('selected', {to})
+    if(to===null) {
+        res.render('Notfound')
+    }
+    else{
+        res.render('selected', {to})
+    }
 })
 
 

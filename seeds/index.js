@@ -16,8 +16,8 @@ db.once("open", () => {
 
 const seedDB = async () => {
     await Topic.deleteMany({});
-    for(let i=0;i<24;i++) {
-        const rand = Math.floor(Math.random()*24);
+    for(let i=0;i<35;i++) {
+        const rand = Math.floor(Math.random()*35);
         const t = new Topic( {
             index: `${topics[rand].index}`,
             topic: `${topics[rand].topic}`
