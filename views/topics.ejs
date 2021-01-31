@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Document</title>
+    <title>All topics</title>
+    <link rel="stylesheet" href="/css/topics.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Home</a>
+        </div>
+      </nav>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h1>All topics</h1>
+            <div class="col-lg-12" id="content">
+                <h1 class="text-center display-2">All topics</h1>
+            </div>
+            <div class="col-lg-12 text-center">
+                <mark><a href="https://forms.gle/CWiUKo6H7Zc1C4Fh8">Click to submit</a></mark>
+            </div>
+            <div class="col-lg-12" id="topics" >
                 <ol>
                     <% for(let t of topics) { %> 
                         <li><%= t.topic %> </li>
                     <% } %> 
                 </ol>
+            </div>
             </div>
         </div>
     </div>

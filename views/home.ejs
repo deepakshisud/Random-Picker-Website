@@ -11,20 +11,21 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12  center-block">
                 <div id="content">
                     <h1>WAT Topic Picker</h1>
                     <h3>Click the button to get a random topic</h3>
-                    <hr>
-                    <input type="text" class="text-center" id="tb" name="tb" />
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                        <input type="text" class="text-center form-control" id="tb" name="tb" />
+                      </div>
+                    <br>
+                    <br>
+                    <input type="button" class="btn btn-light btn-lg" onclick="Random();" value="Click here"/>
                     <br>
                     <br>
                     <br>
-                    <input type="button" class="btn btn-secondary btn-lg" onclick="Random();" value="Click here"/>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="btn btn-secondary btn-lg"> <a href="/topics">Go to topics</a></button>
+                    <button class="btn btn-dark btn-lg"> <a href="/topics">Go to topics</a></button>
                 </div>
             </div>
         </div>
