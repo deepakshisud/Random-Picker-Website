@@ -1,11 +1,8 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const topicsSchema = new mongoose.Schema( {
-    topic: {
-        type: String
-    }
+const topicsSchema = new Schema( {
+    topic: String
 })
 
-const Topic = mongoose.model('Topic', topicsSchema);
-
-module.exports = Topic;
+module.exports = mongoose.model('Topic', topicsSchema);

@@ -73,5 +73,5 @@ module.exports = [
     },
     {
         topic: 'How successful would be the Climate Change Summit Paris?'
-    },
+    }
 ]
