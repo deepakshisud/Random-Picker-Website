@@ -19,6 +19,7 @@ const seedDB = async () => {
     for(let i=0;i<24;i++) {
         const rand = Math.floor(Math.random()*24);
         const t = new Topic( {
+            index: `${topics[rand].index}`,
             topic: `${topics[rand].topic}`
         })
         await t.save();
