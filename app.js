@@ -29,16 +29,12 @@ app.get('/', async (req, res) => {
     res.render('home');
 })
 
-app.get('/topic', (req, res) => {
-    res.render('topics');
-})
 
-app.post('/', async(req,res) => {
+app.put('/selected', async(req,res) => {
     const t = req.body.topic;
     console.log(t);
-    const topic = await Topic.findOne(t);
-    console.log(topic);
-    res.send("worked");
+    const to = await Topic.findOne(t);
+    res.render('selected', {to})
 })
 
 

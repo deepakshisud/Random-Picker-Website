@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selected</title>
+    <title>Random Topic Picker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/index.js"></script>
+    <style>
+        .jumbotron{
+            background-image: url("https://images.unsplash.com/photo-1580934174026-8142803ebb5b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8c3RpY2t5JTIwbm90ZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>working</h1>
+    <section id="Header" class="jumbotron text-center">
+        <h1 class="display-4"><b>Random Topic Picker</b></h1>
+    </section>
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <p class="display-5">Your topic is</p>
+        </div>
+        <div class="col-12 text-center">
+            <p class="display-4"><%= to.topic %> </p>
+        </div>
+    </div>
 </body>
-</html>
